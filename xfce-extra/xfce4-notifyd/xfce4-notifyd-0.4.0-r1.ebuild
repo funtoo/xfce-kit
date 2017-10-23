@@ -1,4 +1,3 @@
-# Copyright 1999-2017 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=6
@@ -19,6 +18,7 @@ RDEPEND=">=dev-libs/glib-2.42:2=
 	>=x11-libs/libnotify-0.7:=
 	>=xfce-base/libxfce4ui-4.12:=[gtk3(+)]
 	>=xfce-base/libxfce4util-4.12:=
+	>=xfce-base/xfce4-panel-4.12:=
 	>=xfce-base/xfconf-4.10:="
 DEPEND="${RDEPEND}
 	dev-util/gdbus-codegen
@@ -28,12 +28,15 @@ DEPEND="${RDEPEND}
 
 DOCS=( AUTHORS NEWS README TODO )
 
+src_prepare() {
+	eapply "${FILESDIR}"/${PN}-gtk-3.20.patch
+	default
+}
+
 pkg_postinst() {
-	GNOME2_ECLASS_ICONS="usr/share/icons/hicolor" \
 	gnome2_icon_cache_update
 }
 
 pkg_postrm() {
-	GNOME2_ECLASS_ICONS="usr/share/icons/hicolor" \
 	gnome2_icon_cache_update
 }
