@@ -3,10 +3,11 @@ DEPEND=>=x11-libs/gtk+-2.20:2 x11-libs/libX11 >=xfce-base/libxfce4ui-4.8 >=xfce-
 DESCRIPTION=A plugin to indicate the status of the IBM Hard Drive Active Protection System
 EAPI=6
 HOMEPAGE=http://michael.orlitzky.com/code/xfce4-hdaps.php
+IUSE=kernel_linux
 KEYWORDS=~amd64 ~x86
 LICENSE=GPL-3
 RDEPEND=>=x11-libs/gtk+-2.20:2 x11-libs/libX11 >=xfce-base/libxfce4ui-4.8 >=xfce-base/libxfce4util-4.8 >=xfce-base/xfce4-panel-4.8 >=app-laptop/hdapsd-20090101 >=app-laptop/tp_smapi-0.39
 SLOT=0
 SRC_URI=http://michael.orlitzky.com/code/releases/xfce4-hdaps-0.0.9.tar.bz2
-_eclasses_=epatch	8233751dc5105a6ae8fcd86ce2bb0247	epunt-cxx	f8073339d152f56626493f43d8ba4691	estack	5ac2a138d0b33354b764d84f9e835db8	eutils	1fb064d93b3ffd05c2fb19ef430a4aa1	gnome2-utils	22ebae0b986793be079d9d93fa16a8ea	linux-info	ca370deef9d44125d829f2eb6ebc83e0	ltprune	2770eed66a9b8ef944714cd0e968182e	multilib	97f470f374f2e94ccab04a2fb21d811e	toolchain-funcs	6eb35f81556258a4bc9182ad3dfd58ee	versionator	c80ccf29e90adea7c5cae94b42eb76d0	xdg-utils	9ef13b5c5bcf0c50d6aa53692d8e441c
+_eclasses_=eapi7-ver	d97a56a62c7df8614afddcb25f5ff00f	epatch	8233751dc5105a6ae8fcd86ce2bb0247	epunt-cxx	f8073339d152f56626493f43d8ba4691	estack	5ac2a138d0b33354b764d84f9e835db8	eutils	1fb064d93b3ffd05c2fb19ef430a4aa1	gnome2-utils	22ebae0b986793be079d9d93fa16a8ea	linux-info	953c3b1c472dcadbf62098a9301327f2	ltprune	2770eed66a9b8ef944714cd0e968182e	multilib	97f470f374f2e94ccab04a2fb21d811e	toolchain-funcs	6eb35f81556258a4bc9182ad3dfd58ee	xdg-utils	9ef13b5c5bcf0c50d6aa53692d8e441c
 _md5_=3f71fdb799fa5be1e71571abe5d6feb4
