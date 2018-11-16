@@ -12,7 +12,6 @@ media-sound/pragha:peas - Enable various plugins that will pull in dev-libs/libp
 media-sound/pragha:playlist - Enable enhanced playlist support using dev-libs/totem-pl-parser
 media-sound/pragha:rygel - Share music on DLNA using net-misc/rygel
 media-sound/pragha:soup - Search metadata on AcoustID and radios on TuneIn using net-libs/libsoup
-media-video/parole:clutter - Compile in Clutter GTK+ support
 x11-terms/xfce4-terminal:utempter - Include utmp management support via sys-libs/libutempter
 xfce-base/garcon:gtk2 - Build the garcon-gtk2-1 library (required for xfce-base/xfce4-panel < 4.13 only).
 xfce-base/libxfce4ui:glade - Build support for Glade 3's GtkBuilder implementation

@@ -3,10 +3,10 @@ DEPEND=>=dev-libs/glib-2.18:2 >=x11-libs/gtk+-2.12:2 >=xfce-base/xfce4-panel-4.8
 DESCRIPTION=A simple locate based search plug-in for the Xfce panel
 EAPI=6
 HOMEPAGE=https://goodies.xfce.org/projects/panel-plugins/xfce4-linelight-plugin
-KEYWORDS=~amd64 ~ppc ~ppc64 ~x86
+KEYWORDS=amd64 ~ppc ~ppc64 ~x86
 LICENSE=GPL-2
 RDEPEND=>=dev-libs/glib-2.18:2 >=x11-libs/gtk+-2.12:2 >=xfce-base/xfce4-panel-4.8 >=xfce-base/libxfcegui4-4.8 sys-apps/mlocate
 SLOT=0
 SRC_URI=mirror://debian/pool/main/x/xfce4-linelight-plugin/xfce4-linelight-plugin_0.1.7.orig.tar.bz2
 _eclasses_=autotools	1bf086cdd7356f5c9a4acd9727bd2065	libtool	e32ea84bf82cf8987965b574672dba93	multilib	97f470f374f2e94ccab04a2fb21d811e	toolchain-funcs	6eb35f81556258a4bc9182ad3dfd58ee
-_md5_=621509930aee3b81fa33348707762fbd
+_md5_=99822399a7fe990e25af3b13d8c21b2b
