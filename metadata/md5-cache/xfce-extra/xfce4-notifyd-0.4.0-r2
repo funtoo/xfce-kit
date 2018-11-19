@@ -8,5 +8,5 @@ LICENSE=GPL-2
 RDEPEND=>=dev-libs/glib-2.42:2= >=x11-libs/gtk+-3.14:3= >=x11-libs/libnotify-0.7:= >=xfce-base/libxfce4ui-4.12:=[gtk3(+)] >=xfce-base/libxfce4util-4.12:= >=xfce-base/xfce4-panel-4.12:= >=xfce-base/xfconf-4.10:=
 SLOT=0
 SRC_URI=mirror://xfce/src/apps/xfce4-notifyd/0.4/xfce4-notifyd-0.4.0.tar.bz2
-_eclasses_=epatch	8233751dc5105a6ae8fcd86ce2bb0247	epunt-cxx	e99babeaa7d98c1caaa6a61a79902210	estack	5ac2a138d0b33354b764d84f9e835db8	eutils	1fb064d93b3ffd05c2fb19ef430a4aa1	gnome2-utils	22ebae0b986793be079d9d93fa16a8ea	ltprune	2770eed66a9b8ef944714cd0e968182e	multilib	97f470f374f2e94ccab04a2fb21d811e	toolchain-funcs	fa43c370cf1e0d4ada6e123b775a35b7	xdg-utils	9ef13b5c5bcf0c50d6aa53692d8e441c
+_eclasses_=epatch	8233751dc5105a6ae8fcd86ce2bb0247	epunt-cxx	e99babeaa7d98c1caaa6a61a79902210	estack	5ac2a138d0b33354b764d84f9e835db8	eutils	1fb064d93b3ffd05c2fb19ef430a4aa1	gnome2-utils	22ebae0b986793be079d9d93fa16a8ea	ltprune	2770eed66a9b8ef944714cd0e968182e	multilib	97f470f374f2e94ccab04a2fb21d811e	toolchain-funcs	6eb35f81556258a4bc9182ad3dfd58ee	xdg-utils	9ef13b5c5bcf0c50d6aa53692d8e441c
 _md5_=cfc7d973c1541df5ce3674b22441c40c
