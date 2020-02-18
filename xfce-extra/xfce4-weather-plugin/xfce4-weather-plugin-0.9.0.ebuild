@@ -16,7 +16,7 @@ IUSE="upower"
 
 RDEPEND=">=dev-libs/glib-2.42
 	dev-libs/libxml2:=
-	>=net-libs/libsoup-2.42:=[ssl]
+	>=net-libs/libsoup-2.42:=
 	>=x11-libs/gtk+-3.22:3
 	>=xfce-base/libxfce4ui-4.12:=
 	>=xfce-base/libxfce4util-4.12:=
