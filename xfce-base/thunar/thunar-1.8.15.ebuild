@@ -10,7 +10,7 @@ SRC_URI="https://archive.xfce.org/src/xfce/${PN}/${PV%.*}/${P}.tar.bz2"
 LICENSE="GPL-2+ LGPL-2+"
 SLOT="0/3"
 KEYWORDS="*"
-IUSE="exif introspection libnotify pcre +trash-panel-plugin udisks"
+IUSE="exif introspection libnotify pcre +trash-panel-plugin +udisks"
 
 GVFS_DEPEND=">=gnome-base/gvfs-1.18.3"
 COMMON_DEPEND=">=dev-lang/perl-5.6
