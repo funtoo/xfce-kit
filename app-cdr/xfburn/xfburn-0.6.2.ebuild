@@ -10,7 +10,7 @@ SRC_URI="https://archive.xfce.org/src/apps/${PN}/${PV%.*}/${P}.tar.bz2"
 
 LICENSE="GPL-2+"
 SLOT="0"
-KEYWORDS="amd64 arm ~ppc x86"
+KEYWORDS="*"
 IUSE="gstreamer +udev"
 
 RDEPEND=">=dev-libs/glib-2.32:=
