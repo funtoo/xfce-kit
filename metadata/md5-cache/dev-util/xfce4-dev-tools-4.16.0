@@ -7,5 +7,5 @@ KEYWORDS=*
 LICENSE=GPL-2+
 RDEPEND=>=dev-libs/glib-2.42
 SLOT=0
-SRC_URI=https://archive.xfce.org/src/xfce/xfce4-dev-tools/4.14/xfce4-dev-tools-4.14.0.tar.bz2
-_md5_=a60db3589a32a864db439abbd2cf365a
+SRC_URI=https://archive.xfce.org/src/xfce/xfce4-dev-tools/4.16/xfce4-dev-tools-4.16.0.tar.bz2
+_md5_=7242cb5bfef59d1a1469a5dd9462393c
