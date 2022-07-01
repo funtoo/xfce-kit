@@ -2,28 +2,34 @@
 
 EAPI=7
 
-DESCRIPTION="System load plug-in for Xfce panel"
-HOMEPAGE="https://goodies.xfce.org/projects/panel-plugins/xfce4-systemload-plugin"
+inherit xdg-utils
+
+DESCRIPTION="An mount plug-in for the Xfce panel"
+HOMEPAGE="https://goodies.xfce.org/projects/panel-plugins/xfce4-mount-plugin"
 SRC_URI="https://archive.xfce.org/src/panel-plugins/${PN}/${PV%.*}/${P}.tar.bz2"
 
-LICENSE="BSD-2"
+LICENSE="GPL-2+"
 SLOT="0"
 KEYWORDS="*"
-IUSE="upower"
+IUSE=""
 
 RDEPEND=">=xfce-base/libxfce4ui-4.12:=[gtk3(+)]
-	>=xfce-base/xfce4-panel-4.12:=
-	upower? ( >=sys-power/upower-0.9.23 )"
-DEPEND="${RDEPEND}
+	>=xfce-base/xfce4-panel-4.12:="
+DEPEND="${RDEPEND}"
+BDEPEND="
 	dev-util/intltool
+	sys-devel/gettext
 	virtual/pkgconfig"
-
-src_configure() {
-	econf $(use_enable upower)
-}
 
 src_install() {
 	default
 	find "${D}" -name '*.la' -delete || die
 }
 
+pkg_postinst() {
+	xdg_icon_cache_update
+}
+
+pkg_postrm() {
+	xdg_icon_cache_update
+}

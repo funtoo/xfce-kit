@@ -1,8 +1,8 @@
 # Distributed under the terms of the GNU General Public License v2
 
-EAPI=6
+EAPI=7
 
-inherit gnome2-utils
+inherit xdg-utils
 
 DESCRIPTION="A panel plugin for showing information about cpufreq settings"
 HOMEPAGE="https://goodies.xfce.org/projects/panel-plugins/xfce4-cpufreq-plugin"
@@ -11,13 +11,14 @@ SRC_URI="https://archive.xfce.org/src/panel-plugins/${PN}/${PV%.*}/${P}.tar.bz2"
 LICENSE="GPL-2+"
 SLOT="0"
 KEYWORDS="*"
-IUSE=""
 
 RDEPEND=">=dev-libs/glib-2.20:=
 	>=x11-libs/gtk+-3.20:3=
-	>=xfce-base/libxfce4ui-4.12:=[gtk3(+)]
-	>=xfce-base/xfce4-panel-4.12:="
-DEPEND="${RDEPEND}
+	>=xfce-base/libxfce4ui-4.14:=
+	>=xfce-base/libxfce4util-4.14:=
+	>=xfce-base/xfce4-panel-4.14:="
+DEPEND="${RDEPEND}"
+BDEPEND="
 	dev-util/intltool
 	sys-devel/gettext
 	virtual/pkgconfig"
@@ -28,9 +29,9 @@ src_install() {
 }
 
 pkg_postinst() {
-	gnome2_icon_cache_update
+	xdg_icon_cache_update
 }
 
 pkg_postrm() {
-	gnome2_icon_cache_update
+	xdg_icon_cache_update
 }

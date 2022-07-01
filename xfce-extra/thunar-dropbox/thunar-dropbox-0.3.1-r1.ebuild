@@ -1,9 +1,9 @@
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=7
-PYTHON_COMPAT=( python2+ )
+PYTHON_COMPAT=( python3+ )
 PYTHON_REQ_USE='threads(+)'
-inherit cmake-utils gnome2-utils multilib python-any-r1
+inherit cmake python-any-r1 xdg
 
 DESCRIPTION="Plugin for thunar that adds context-menu items for dropbox."
 HOMEPAGE="https://github.com/Jeinzi/thunar-dropbox"
@@ -28,19 +28,15 @@ src_unpack() {
 	mv "${WORKDIR}"/Jeinzi-thunar-dropbox-* "${S}" || die
 }
 
+src_prepare(){
+	default
+	cmake_src_prepare
+}
+
 src_configure() {
 	mycmakeargs=(
 		-DCMAKE_BUILD_TYPE=Release
 	)
 
-	cmake-utils_src_configure
+	cmake_src_configure
 }
-
-pkg_preinst()
-{ gnome2_icon_savelist; }
-
-pkg_postinst()
-{ gnome2_icon_cache_update /usr/share/icons/hicolor; }
-
-pkg_postrm()
-{ gnome2_icon_cache_update /usr/share/icons/hicolor; } 
