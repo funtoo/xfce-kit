@@ -13,9 +13,11 @@ SLOT="0"
 KEYWORDS="*"
 
 RDEPEND=">=x11-libs/gtk+-3.22:3
-	>=xfce-base/libxfce4ui-4.12:=
-	>=xfce-base/xfce4-panel-4.12:="
-DEPEND="${RDEPEND}
+	>=xfce-base/libxfce4ui-4.14:=
+	>=xfce-base/libxfce4util-4.14:=
+	>=xfce-base/xfce4-panel-4.14:="
+DEPEND="${RDEPEND}"
+BDEPEND="
 	dev-util/intltool
 	sys-devel/gettext
 	virtual/pkgconfig"
