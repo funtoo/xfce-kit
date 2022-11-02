@@ -10,5 +10,5 @@ LICENSE=GPL-2
 RDEPEND=>=dev-libs/glib-2.42 media-libs/gst-plugins-base:1.0[alsa?] >=x11-libs/gtk+-3.14.0:3 >=xfce-base/libxfce4ui-4.12 >=xfce-base/libxfce4util-4.12 >=xfce-base/xfce4-panel-4.12 >=xfce-base/xfconf-4.12 keybinder? ( dev-libs/keybinder:3 ) pulseaudio? ( media-sound/pulseaudio ) sndio? ( media-sound/sndio )
 SLOT=0
 SRC_URI=https://gitlab.xfce.org/apps/xfce4-mixer/-/archive/765725029751bb93a927692fdcda3e3743d0e6e7/xfce4-mixer-765725029751bb93a927692fdcda3e3743d0e6e7.tar.bz2 -> xfce4-mixer-4.15.0_pre20211111.tar.bz2
-_eclasses_=autotools	1bf086cdd7356f5c9a4acd9727bd2065	libtool	f143db5a74ccd9ca28c1234deffede96	multilib	d410501a125f99ffb560b0c523cd3d1e	toolchain-funcs	24921b57d6561d87cbef4916a296ada4	xdg	c7ba313ea1eaf266f95cc6235f7d6a07	xdg-utils	14d00d009167652b1fa363e55effe213
+_eclasses_=autotools	5223f703a2e9c194fcda924f8c4b6baf	libtool	f143db5a74ccd9ca28c1234deffede96	multilib	d410501a125f99ffb560b0c523cd3d1e	toolchain-funcs	24921b57d6561d87cbef4916a296ada4	xdg	c7ba313ea1eaf266f95cc6235f7d6a07	xdg-utils	14d00d009167652b1fa363e55effe213
 _md5_=23349c365143ccead3d6152398615802

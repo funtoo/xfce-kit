@@ -9,5 +9,5 @@ LICENSE=GPL-3+
 RDEPEND=>=x11-libs/gtk+-3.22.0:3 x11-libs/libX11 >=x11-libs/libwnck-3.22:3 >=xfce-base/libxfce4ui-4.14:= >=xfce-base/libxfce4util-4.14:= >=xfce-base/xfce4-panel-4.14:= >=xfce-base/xfconf-4.14:=
 SLOT=0
 SRC_URI=https://gitlab.xfce.org/panel-plugins/xfce4-windowck-plugin/-/archive/75d9344f7069f14b09edd72647911e029bdba757/xfce4-windowck-plugin-75d9344f7069f14b09edd72647911e029bdba757.tar.bz2 -> xfce4-windowck-plugin-0.4.6_p20220619.tar.bz2
-_eclasses_=autotools	1bf086cdd7356f5c9a4acd9727bd2065	eapi8-dosym	cd7d420bb5be5ee079f27239ce76b8f5	libtool	f143db5a74ccd9ca28c1234deffede96	multilib	d410501a125f99ffb560b0c523cd3d1e	multiprocessing	cac3169468f893670dac3e7cb940e045	python-any-r1	54a3178500786b0a7ede4a23b7f2a6ad	python-utils-r1	32393cac272daca4c136cc44e6005b67	toolchain-funcs	24921b57d6561d87cbef4916a296ada4	xdg-utils	14d00d009167652b1fa363e55effe213
+_eclasses_=autotools	5223f703a2e9c194fcda924f8c4b6baf	eapi8-dosym	cd7d420bb5be5ee079f27239ce76b8f5	libtool	f143db5a74ccd9ca28c1234deffede96	multilib	d410501a125f99ffb560b0c523cd3d1e	multiprocessing	cac3169468f893670dac3e7cb940e045	python-any-r1	54a3178500786b0a7ede4a23b7f2a6ad	python-utils-r1	32393cac272daca4c136cc44e6005b67	toolchain-funcs	24921b57d6561d87cbef4916a296ada4	xdg-utils	14d00d009167652b1fa363e55effe213
 _md5_=43c85de67cf67068375b6b2bab29039b
