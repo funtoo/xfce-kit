@@ -1,0 +1,14 @@
+BDEPEND=dev-libs/libxml2 dev-util/intltool sys-devel/gettext virtual/pkgconfig
+DEFINED_PHASES=configure postinst postrm
+DEPEND=>=dev-libs/glib-2.42:2= >=x11-libs/gtk+-3.22:3= x11-libs/libX11:= >=x11-libs/vte-0.51.3:2.91= >=xfce-base/libxfce4ui-4.16:=[gtk3(+)] >=xfce-base/xfconf-4.16:= utempter? ( sys-libs/libutempter:= )
+DESCRIPTION=A terminal emulator for the Xfce desktop environment
+EAPI=7
+HOMEPAGE=https://docs.xfce.org/apps/terminal/start
+IUSE=utempter
+KEYWORDS=*
+LICENSE=GPL-2+
+RDEPEND=>=dev-libs/glib-2.42:2= >=x11-libs/gtk+-3.22:3= x11-libs/libX11:= >=x11-libs/vte-0.51.3:2.91= >=xfce-base/libxfce4ui-4.16:=[gtk3(+)] >=xfce-base/xfconf-4.16:= utempter? ( sys-libs/libutempter:= )
+SLOT=0
+SRC_URI=https://archive.xfce.org/src/apps/xfce4-terminal/1.0/xfce4-terminal-1.0.4.tar.bz2
+_eclasses_=xdg-utils	14d00d009167652b1fa363e55effe213
+_md5_=61d306a28734fd912de511504e99238d
