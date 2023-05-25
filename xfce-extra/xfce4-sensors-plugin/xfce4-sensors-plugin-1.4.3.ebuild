@@ -29,7 +29,6 @@ RDEPEND=">=x11-libs/gtk+-3.20:3=
 	lm_sensors? ( >=sys-apps/lm_sensors-3.1.0:= )
 	video_cards_nvidia? (
 		x11-drivers/nvidia-drivers[tools,static-libs]
-		media-video/nvidia-settings
 	)"
 DEPEND=${RDEPEND}
 
