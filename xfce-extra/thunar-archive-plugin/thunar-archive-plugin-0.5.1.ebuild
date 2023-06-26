@@ -21,10 +21,6 @@ DEPEND="${RDEPEND}
 	sys-devel/gettext
 	virtual/pkgconfig"
 
-PATCHES=(
-	"${FILESDIR}"/0.3.1-fix-kde-ark.patch
-)
-
 src_install() {
 	default
 	find "${D}" -name '*.la' -delete || die
@@ -32,6 +28,9 @@ src_install() {
 
 pkg_postinst() {
 	gnome2_icon_cache_update
+	
+	ewarn "The Thunar Archive Plugin currently includes support for Xarchiver, File Roller (GNOME archive manager), Ark (KDE archive manager) and Engrampa (MATE archive manager)."
+	einfo "Thunar archive plugin requires an archive manager to function.  Officially supported Archive Managers are in meta-repo: Xarchiver, File Roller (GNOME archive manager), Ark (KDE arvhive manager) and Engrampa (Mate archive manager)."
 }
 
 pkg_postrm() {
