@@ -1,4 +1,4 @@
-BDEPEND=cinnamon? ( dev-lang/sassc ) gnome-shell? ( dev-lang/sassc >=gnome-base/gnome-shell-3.18 ) gtk2? ( !pre-rendered? ( media-gfx/inkscape media-gfx/optipng ) ) gtk3? ( dev-lang/sassc !pre-rendered? ( media-gfx/inkscape media-gfx/optipng ) virtual/pkgconfig >=x11-libs/gtk+-3.18:3 ) xfce? ( !pre-rendered? ( media-gfx/inkscape media-gfx/optipng ) ) >=app-portage/elt-patches-20170815 !<sys-devel/gettext-0.18.1.1-r3 || ( >=sys-devel/automake-1.16.1:1.16 >=sys-devel/automake-1.15.1:1.15 ) >=sys-devel/autoconf-2.69 >=sys-devel/libtool-2.4
+BDEPEND=cinnamon? ( dev-lang/sassc ) gnome-shell? ( dev-lang/sassc >=gnome-base/gnome-shell-3.18 ) gtk2? ( !pre-rendered? ( media-gfx/inkscape media-gfx/optipng ) ) gtk3? ( dev-lang/sassc !pre-rendered? ( media-gfx/inkscape media-gfx/optipng ) virtual/pkgconfig >=x11-libs/gtk+-3.18:3 ) xfce? ( !pre-rendered? ( media-gfx/inkscape media-gfx/optipng ) ) >=app-portage/elt-patches-20170815 || ( >=sys-devel/automake-1.16.5:1.16 ) >=sys-devel/autoconf-2.71 >=sys-devel/libtool-2.4
 DEFINED_PHASES=compile configure prepare
 DESCRIPTION=A flat theme with transparent elements for GTK+3, GTK+2 and GNOME Shell
 EAPI=7
@@ -9,5 +9,5 @@ LICENSE=GPL-3
 RDEPEND=gtk2? ( x11-themes/gnome-themes-standard x11-themes/gtk-engines-murrine )
 SLOT=0
 SRC_URI=https://github.com/jnsh/arc-theme/archive/958b9b554cde5a8be7280bdf4a908ebe833cbd81.tar.gz -> arc-theme-20200502.tar.gz pre-rendered? ( https://dev.gentoo.org/~chewi/distfiles/arc-theme-20200502-pngs.tar.xz )
-_eclasses_=autotools	5223f703a2e9c194fcda924f8c4b6baf	libtool	f143db5a74ccd9ca28c1234deffede96	multilib	d410501a125f99ffb560b0c523cd3d1e	toolchain-funcs	24921b57d6561d87cbef4916a296ada4
+_eclasses_=autotools	e9ade2787b2f54643c7cdffbfa1cca9c	libtool	f143db5a74ccd9ca28c1234deffede96	multilib	d410501a125f99ffb560b0c523cd3d1e	toolchain-funcs	24921b57d6561d87cbef4916a296ada4
 _md5_=c302decebfc09ac7c423f297373de5c0
